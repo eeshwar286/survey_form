@@ -1,0 +1,88 @@
+<html lang="en">
+  <head>
+
+    <style>
+      body {
+        color: #800000;
+        font-family: georgia;
+        padding-left: 18%;
+        padding-right: 18%;
+      }
+      label {
+        color: #FFDAB9;
+        font-size: 20px;
+        display: inline-block;
+        padding-bottom: 10px;
+      }
+      input, textarea, select {
+        display: block;
+        width: 100%;
+        padding-bottom:10px;
+      }
+
+      form {
+        background-color: #800000;
+        padding: 40px 40px 40px 40px;
+      }
+
+      #button-area {
+        color:  white;
+        float: left;
+        width: 50%;
+        height: 50%;
+      }
+
+      input[type=checkbox]:not(old) + label,
+      input[type=radio   ]:not(old) + label {
+        display      : inline-block;
+        margin-left  : -28px;
+        padding-left : 28px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="title">Tell Me About Your Interests</h1>
+    <p id="description">
+      This is a survey where you can tell us about your fascinating interests. Also recieve our best motivational talks through  subscribing this newsletter.
+    </p>
+    <form id="survey-form">
+      <label id="name-label">Name:</label>
+      <input type="text" name="name" id="name" required placeholder="Your Name"><br>
+
+      <label id="email-label">Email:</label>
+      <input type="email" name="email" id="email" required placeholder="Email you would like to recieve our newsletters"><br>
+
+      <label id="number-label">Number:</label>
+      <input type="number" name="MOBILE number" id="number" min="0" max="100000000000" required placeholder="Your mobile number for verification"><br>
+
+
+      <label id="guitar-type-label">Area you  live in:</label>
+      <select id="dropdown" name="not specified">
+        <option value="Rural">Rural</option>
+        <option value="Urban">Urban</option>
+        <option value="Downtown">Downtown</option>
+        <option value="Rather not say">Rather not say</option>
+      </select>
+
+      <label id="additional-comments-label">Write a paragraph about yourself (Be creative):</label>
+      <textarea placeholder="tell us more"></textarea><br>
+
+      <div id="button-area">
+        <label id="gender-label">Gender:</label>
+        <input type="radio" class="radio-inline" name="gender" value="male"> Male<br>
+        <input type="radio" class="radio-inline" name="gender" value="female"> Female<br>
+        <input type="radio" class="radio-inline" name="gender" value="other"> Other
+      </div>
+      <div id="button-area">
+        <label id="transportation-type-label">You  are fascinated about:</label>
+        <input type="checkbox" name="vehicle1" value="Bike">Bikes and cars<br>
+        <input type="checkbox" name="vehicle2" value="Car">Art<br>
+        <input type="checkbox" name="vehicle3" value="Boat" checked>Lifestyle<br>
+      </div>
+
+      <input type="submit" id="submit">
+    </form>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
